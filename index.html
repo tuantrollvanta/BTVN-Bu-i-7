@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" type="text/javascript"></script>
+    <title>LocalStorage Students</title>
+</head>
+<body onload="renderStudent()">
+    <div class="form">
+        <div class="form-group">
+            <label for="name" >Name</label>
+            <input type="text" id="name" placeholder="Name" class="form-input">
+            <div class="error-message"></div>
+        </div>
+        <div class="form-group">
+            <label for="address" >Address</label>
+            <input type="text" id="address" placeholder="Address" class="form-input">
+            <div class="error-message"></div>
+        </div>
+        <table cellspacing="0" cellpadding="0" id="tablecontent" border="1px"></table>
+        
+        <div class="form-group">
+            <input type="hidden" id="index">
+        </div>
+        <button id="add" onclick="addNew()">Add</button>
+        <button id="save" onclick="changeStudent()"style="display: none;">Update</button>
+    </div>
+   
+</body>
+</html>
